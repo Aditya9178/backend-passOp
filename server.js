@@ -14,7 +14,7 @@ app.use(bodyparser.json())
 // app.use(cors())
 
 app.use(cors({
-  origin: "https://frontend-pass-op.vercel.app/"
+  origin: "https://frontend-pass-op.vercel.app"
 }))
 
 // Connection URL
