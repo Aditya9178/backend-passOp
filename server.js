@@ -11,7 +11,11 @@ const app = express()
 const port = 3000
 
 app.use(bodyparser.json())
-app.use(cors())
+// app.use(cors())
+
+app.use(cors({
+  origin: "https://frontend-pass-op.vercel.app/"
+}))
 
 // Connection URL
 const url = process.env.MONGO_URI
